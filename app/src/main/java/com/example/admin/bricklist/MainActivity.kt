@@ -95,6 +95,7 @@ class MainActivity : AppCompatActivity() {
         val button : Button = v as Button
         val linearLayout : LinearLayout = button.parent as LinearLayout
         val index: Int = linearLayout.id
+
         dbHandler?.readInventoryParts(index)
         showViewActivity()
     }

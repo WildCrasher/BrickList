@@ -50,6 +50,10 @@ class AddActivity : AppCompatActivity() {
 
     private inner class BgTask: AsyncTask<String, Int, String>(){
 
+        override fun onPreExecute(){
+            super.onPreExecute()
+        }
+
         override fun onPostExecute(result: String?){
             super.onPostExecute(result)
             showMainActivity()
